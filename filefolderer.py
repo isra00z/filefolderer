@@ -1,13 +1,14 @@
 """
+v0.8
 This script creates folders inside a directory, one for each non-folder element,
 as many as n files in the directory it was executed from, whatever the extension, and names each
 as the name of each file listed (minus "desktop.ini" and the name of the script itself).
 On the completion of that task, moves each file found to its name-corresponding new folder.
 """
 """
-TODO:   A) --  
-FIXES:  1) Write a log to a .txt so it can be read in case of wanting to undo past executions
-        2) Hability to select if run normally or load past log
+TODO:   1) Write a log to a .txt so it can be read in case of wanting to undo past executions
+        2) Hability to select if run normally or load past log  
+FIXES:  A) Catch exceptions to name conflicts
 
 """
 import os
